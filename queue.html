@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Queue</title>
+<meta name="keywords" content="Queue,queue,队列,队列的应用" />
+<meta name="description" content="队列的应用" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.ennui.contentslider.css" rel="stylesheet" type="text/css" media="screen,projection" />
+</head>
+<body>
+<div id="templatemo_header_wrapper">
+ 
+	<div id="templatemo_header">
+    
+    	<div id="site_title">
+            <h1><a href="index.html" target="_parent">
+                <img src="images/templatemo_logo.png" alt="Web Templates" />
+                <span>程序=算法+数据结构</span>
+            </a></h1>
+        </div>
+
+        <div class="cleaner"></div>
+	</div><!-- end of header -->
+    
+    	<div id="templatemo_menu">
+            <ul>
+                <li><a href="index.html" class="current">主页</a></li>
+                <li><a href="Data_Structure.html">数据结构</a></li>
+                <li><a href="Java_language.html">操作系统</a></li>
+                <li><a href="Eclipse_platform.html">软件工程方法</a></li>
+				<li><a href="MySQL_data_base.html">数据库技术</a></li>
+				<li><a href="MySQL_data_base.html">网络技术基础</a></li>
+            </ul>    	
+    	</div><!-- end of templatemo_menu -->
+ 
+        <div id="templatemo_banner">
+            
+                <div id="one" class="contentslider">
+                    <div class="cs_wrapper">
+                        <div class="cs_slider">
+                        
+                            <div class="cs_article">
+                            	
+                                <div class="left">
+                                    <br/><h2>《软件技术基础》：新实验建设任务</h2>
+                                    <p>&emsp;&emsp;啦啦啦，《软件技术基础》的上机实验时间到来啦~想想有木有小激动呢，小伙伴们~~这次的实验会包含有C语言、Java、MySQL等等，挑你喜欢的去做吧，期待你们的实验成果哟~小柏在这里打个酱油先，要撤了→_→</p>
+                                    
+                                    <div class="button"><a href="index.html">Read more</a></div>
+                               	</div>
+                                <div class="right">
+                               <a href="index.html" target="_parent"><img src="images/slider/templatemo_slide02.jpg" alt="Template 1" /></a>
+								</div>
+                                                                
+                            </div><!-- End cs_article -->
+                            
+                            <div class="cs_article">
+                                <div class="left">
+                                    <h2>C language & resource download</h2>
+                                    <p>&emsp;&emsp;提供C语言资源下载及实验任务介绍 </p>
+                                    
+                                    <div class="button"><a href="Data_Structure.html">Read more</a></div>
+                               	</div>
+                                <div class="right">
+                                <a href="C_language.html" target="_parent"><img src="images/slider/templatemo_slide01.jpg" alt="Template 2" /></a>
+                                </div>
+                            </div><!-- End cs_article -->
+                            
+                            <div class="cs_article">
+                                <div class="left">
+                                    <h2>Java language & resource download</h2>
+                                    <p>&emsp;&emsp;提供Jave语言资源下载及实验任务介绍</p>
+                                    
+                                    <div class="button"><a href="Java_language.html">Read more</a></div>
+                               	</div>
+                                <div class="right">
+                                <a href="Java_language.html" target="_parent"><img src="images/slider/templatemo_slide03.jpg" alt="Template 3" /></a>
+                                </div>
+                            </div><!-- End cs_article -->
+                            
+                            <div class="cs_article">
+                                <div class="left">
+                                    <h2>MySQL Data Base</h2>
+                                    <p>&emsp;&emsp;提供MySQL有关的资源下载及实验任务介绍</p>
+                                    
+                                    <div class="button"><a href="MySQL_data_base.html">Read more</a></div>
+                               	</div>
+                                <div class="right">
+                                <a href="MySQL_data_base.html" target="_parent"><img src="images/slider/templatemo_slide04.jpg" alt="Template 4" /></a>
+                                </div>
+                            </div><!-- End cs_article -->
+                      
+                        </div><!-- End cs_slider -->
+                    </div><!-- End cs_wrapper -->
+                </div><!-- End contentslider -->
+                
+                <!-- Site JavaScript -->
+                <script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
+                <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+                <script type="text/javascript" src="js/jquery.ennui.contentslider.js"></script>
+                <script type="text/javascript">
+                    $(function() {
+                    $('#one').ContentSlider({
+                    width : '920px',
+                    height : '200px',
+                    speed : 800,
+                    easing : 'easeInOutBack'
+                    });
+                    });
+                </script>
+                <script src="js/jquery.chili-2.2.js" type="text/javascript"></script>
+                <script src="js/chili/recipes.js" type="text/javascript"></script>
+                <div class="cleaner"></div>
+   
+        </div>
+ 
+</div> <!-- end of header_wrapper -->
+ 
+<div id="templatemo_content_wrapper_outer">
+<div id="templatemo_content_wrapper_inner">
+<div id="templatemo_content_wrapper">
+ 
+    <div id="templatemo_content">
+    
+    	<br/><h1><strong>队列的应用</strong></h1>
+    
+        <p>&emsp;&emsp;队列是一种操作受限的线性表，它只允许在线性表的一端进行数据元素插入操作而在另一端才能进行数据元素删除操作。其中，允许插入的一端称为队尾，允许删除的另一端称为队头。根据队列的特点，队列需要两个队列指针来说明：一个是队头指针front，它总是指向队头元素的前一个位置；另一个是队尾指针rear，它总是指向队尾元素所在的存储位置。</p>
+        
+        <div class="cleaner_h30"></div>
+    
+        <div class="services_section">
+            <h2><strong>实验目的</strong></h2>
+ 
+          <div class="services_content">
+
+                <div class="left">
+                	<p>&emsp;&emsp;1.掌握队列的概念和两种存储结构，即顺序存储结构和链式存储结构；<br/>
+					  &emsp;&emsp;2.掌握队列的特点，即先进先出的原则；<br/>
+					  &emsp;&emsp;3.掌握队列的基本操作，如出队和入队等；<br/>
+					  &emsp;&emsp;4.运用队列解决实际问题。
+					</p>
+		    </div>
+                
+                <div class="cleaner"></div>
+            </div>
+ 
+        </div>
+        
+         <div class="services_section">
+        
+            <h2><strong>实验要求</strong></h2>
+            
+	      <div class="services_content">
+
+                <div class="left">
+                
+                	<p>&emsp;&emsp;通过上机调试理解和掌握队列的概念和基本操作算法；在此基础上根据设计性实验提示补充程序关键部分使程序满足设定的功能要求。
+					</p>
+            </div>
+                <div class="cleaner"></div>
+            </div>
+        </div>
+        
+        <div class="services_section">
+        
+            <h2><strong>背景知识</strong></h2>
+ 
+        <div class="services_content">
+            
+                <div class="left">
+                
+                	<p><strong>一、队列的概念</strong><br/>
+					   &emsp;&emsp;队列与栈相同都是操作受限的线性表，它只允许在线性表的一端进行数据元素插入操作而在另一端进行数据删除操作。其中，允许插入的一端称为队尾，允许删除的一端称为队头。根据队列的这一特点，设置两个队列指针，总之指向队头元素的是队头指针front，总是指向队尾元素的是队尾指针rear。由于队列中元素的插入和删除分别在队尾和队头进行，所以总是先入队列的元素先出队列，即队列具有先进先出的特性。<br/>
+					   <strong>二、顺序队列</strong><br/>
+					   &emsp;&emsp;顺序队列使用一组地址连续的空间存放队列中的元素。<br/>
+					   <strong>三、循环队列</strong><br/>
+					   &emsp;&emsp;循环队列是队列的结构空间首尾相连。这样一来就可以解决顺序队列假溢出的问题。<br/>
+					   <div>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="images/queue/queue1.jpg" alt="image 3" /></div><br/>
+					   <strong>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图1　循环队列</strong><br/><br/>
+				    </p>
+            </div> 
+                
+                <div class="cleaner"></div>
+            </div>
+        </div>
+		
+		        <div class="services_section">
+        
+            <h2><strong>示例程序</strong></h2>
+ 
+        <div class="services_content">
+            
+                <div class="left">
+                
+                	<p><strong>一、初始化队列</strong><br/>
+					<div><img src="images/queue/queue2.jpg" alt="image 3" /></div><br/>
+					   <strong>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图2　初始化队列</strong><br/><br/>
+					   <strong>二、入队列</strong><br/>
+					<div><img src="images/queue/queue3.jpg" alt="image 3" /></div><br/>
+					   <strong>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图3　入队列</strong><br/><br/>
+					   <strong>三、出队列</strong><br/>
+					<div><img src="images/queue/queue4.jpg" alt="image 3" /></div><br/>
+					   <strong>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图4　出队列</strong><br/><br/>
+					</p>
+            </div> 
+                
+                <div class="cleaner"></div>
+            </div>
+        </div>
+		
+        <div class="services_section">
+        
+            <h2><strong>实验内容</strong></h2>
+ 
+        <div class="services_content">
+            
+                <div class="left">
+                
+                	<p>&emsp;&emsp;1.设计一个循环队列，实现队列的基本功能：入队、出队；对上述功能进行测试（编写函数，调用函数，验证所设计的队列的准确性）;<br/>
+					   &emsp;&emsp;2.用所设计的循环队列实现一次存储1～10，每入队一个数字便打印一个队列。<br/>
+					   <div><img src="images/queue/queue6.jpg" alt="image 3" /></div>
+					</p>
+            </div> 
+                
+                <div class="cleaner"></div>
+            </div>
+        </div>
+		
+		<div class="services_section">
+        
+            <h2><strong>实验报告要求</strong></h2>
+ 
+        <div class="services_content">
+            
+                <div class="left">
+                
+                	<p>&emsp;&emsp;1.基本要求见实验要求；<br/>
+					   &emsp;&emsp;2.记录实验结果，回答思考题。<br/>
+					</p>
+            </div> 
+					<div class="services_section">
+        
+            <h2><strong>参考实现</strong></h2>
+ 
+        <div class="services_content">
+            
+                <div class="left">
+                
+                	<p><div><img src="images/queue/queue5.jpg" alt="image 3" /></div><br/>
+					   <strong>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图5　参考实现1</strong><br/><br/>
+					   <div><img src="images/queue/queue6.jpg" alt="image 3" /></div><br/>
+					   <strong>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图6　参考实现2</strong><br/><br/>
+					   </p>
+            </div> 
+                
+             </div>
+        </div>
+              <div class="cleaner"></div>
+		<div class="button float_l"><a href="index.html">Homepage</a></div>
+		     </div>
+        </div>
+    </div> <!-- end of templatemo_content -->
+		
+       <div id="templatemo_sidebar">
+ 
+           <div id="news_section">
+                
+                <br/><h2>上机实验涉及到的工具</h2>
+   
+                <div class="news_box">
+                    <strong>C language</strong>
+                  <p>&emsp;&emsp;C语言是一种计算机程序设计语言，它既具有高级语言的特点，又具有汇编语言的特点。1978年后，C语言已
+				  先后被移植到大、中、小及微型机上，它可以作为工作系统设计语言，编写系统应用程序，也可以作为应用程序设计语言，编写不依赖计算机硬件的应用程序。它的应用范围广泛，具备很强的数据处理能力。</p>
+                </div>
+                
+                <div class="news_box">
+                    <strong>Java language</strong>
+                  <p>&emsp;&emsp;Java是一种简单的，跨平台的，面向对象的，分布式的，解释的，健壮的，安全的，结构的，中立的，可移植的，性能很优异的，多线程的，动态的（我的老天~）语言。当1995年SUN推出Java语言之后，全世界的目光都被这个神奇的语言所吸引。</p>
+                </div>
+                
+                <div class="news_box">
+                   <strong>MySQL data base</strong>
+                    <p>&emsp;&emsp;MySQL(通常被读作My-SEQuel)是一个开放源码的关联式数据库管理系统。原开发者为瑞典的MySQL AB公司，该公司在2008年被SUN Microsystem收购。甲骨文公司(Oracle)2009年收购SUN公司，MySQL从此成为Oracke旗下产品。MySQL被广泛地应用在Internet上的中小型网站中。由于其体积小、速度快、总体拥有成本低，尤其是开放源码这一特点，许多中小型网站为了降低网站总体拥有成本而选择了MySQL作为网站数据库。MySQL所使用的SQL语言是用于访问数据库的最常用标准化语言。</p>
+                </div>
+                
+                <div class="cleaner"></div>  
+                   
+            </div>
+        
+            <div class="cleaner"></div>
+        </div> <!-- end of sidebar -->
+ 
+	<div class="cleaner"></div>
+</div>
+</div>
+</div>
+        
+<div id="templatemo_footer_wrapper">
+    <div id="templatemo_footer">
+ 
+        <!--ul class="footer_menu">
+            <li><a href="index.html" class="current">主页</a></li>
+                <li><a href="Data_Structure.html">数据结构</a></li>
+                <li><a href="Java_language.html">操作系统</a></li>
+                <li><a href="Eclipse_platform.html">软件工程方法</a></li>
+				<li><a href="MySQL_data_base.html">数据库技术</a></li>
+				<li><a href="MySQL_data_base.html">网络技术基础</a></li-->
+
+        Copyright (c) 2015 <a href="http://222.197.183.243/wlxt/">电子科技大学航空航天学院《软件技术基础》</a> | 
+        Designed by Boyang Lee & Qin Yong</a> | 
+        Validate School of Aeronautics and Astronautics
+    
+</div> <!-- end of footer -->
+ 
+</div> <!-- end of footer_wrapper -->
+ 
+</body>
+</html>
